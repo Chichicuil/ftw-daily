@@ -75,7 +75,20 @@
   color: var(--matterColorLight);
 
   @apply --SectionHero_animation;
-  animation-delay: 0.5s;
+  animation-delay: 2s;
+
+  @media (--viewportMedium) {
+    max-width: var(--SectionHero_desktopTitleMaxWidth);
+  }
+}
+
+.heroMainTitle2 {
+  font-family: 'Tangerine', serif;
+        font-size: 48px;
+  color: var(--matterColorLight);
+
+  @apply --SectionHero_animation;
+  animation-delay: 2s;
 
   @media (--viewportMedium) {
     max-width: var(--SectionHero_desktopTitleMaxWidth);

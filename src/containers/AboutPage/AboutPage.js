@@ -21,11 +21,11 @@ const AboutPage = () => {
   // prettier-ignore
   return (
     <StaticPage
-      title="About Us"
+      title="Nosotros"
       schema={{
         '@context': 'http://schema.org',
         '@type': 'AboutPage',
-        description: 'About Saunatime',
+        description: 'About PuppyCo',
         name: 'About page',
       }}
     >
@@ -35,8 +35,8 @@ const AboutPage = () => {
         </LayoutWrapperTopbar>
 
         <LayoutWrapperMain className={css.staticPageWrapper}>
-          <h1 className={css.pageTitle}>Experience the unique Finnish home sauna.</h1>
-          <img className={css.coverImage} src={image} alt="My first ice cream." />
+          <h1 className={css.pageTitle}>¿Quiénes somos?</h1>
+          <img className={css.coverImage} src={image} alt="My first puppy." />
 
           <div className={css.contentWrapper}>
             <div className={css.contentSide}>
@@ -44,12 +44,11 @@ const AboutPage = () => {
             </div>
 
             <div className={css.contentMain}>
-              <h2>
-                Most of the Finnish saunas are located at the homes of individuals - indeed, most
-                people in Finland live in an apartment with sauna in it. In addition, lots of people
-                have lakeside summer cottages, which also typically come with a separate sauna
-                building near the waterfront.
-              </h2>
+              <p>
+              Puppy Co. es una empresa de apoyo
+              logístico que te brinda visibilidad y
+              confiabilidad apara ayudar a cerrar ventas.
+              </p>
 
               <p>
                 To truly experience a Finnish sauna, you need to look beyond the public saunas, and
