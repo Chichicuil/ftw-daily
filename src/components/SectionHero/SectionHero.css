@@ -1,4 +1,5 @@
 @import '../../marketplace.css';
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 :root {
   /*
@@ -83,9 +84,9 @@
 }
 
 .heroMainTitle2 {
-  font-family: 'Tangerine', serif;
-        font-size: 48px;
-  color: var(--matterColorLight);
+  font-family: 'Pacifico',normal;
+        font-size: 80px;
+        color: #65cdf4;
 
   @apply --SectionHero_animation;
   animation-delay: 2s;

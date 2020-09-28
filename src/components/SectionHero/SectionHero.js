@@ -17,6 +17,9 @@ const SectionHero = props => {
         <h1 className={css.heroMainTitle}>
           <FormattedMessage id="SectionHero.title" />
         </h1>
+        <h1 className={css.heroMainTitle}>
+          mejor <span className={css.heroMainTitle2}>amigo</span>
+        </h1>
         <h2 className={css.heroSubTitle}>
           <FormattedMessage id="SectionHero.subTitle" />
         </h2>
