@@ -1,5 +1,6 @@
 @import '../../marketplace.css';
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet');  
 
 :root {
   /*
@@ -46,6 +47,8 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
+  padding-left: 50%;
+  padding-top: 75%;
 
   /* Text positioning is done with paddings */
 }
@@ -82,11 +85,27 @@
     max-width: var(--SectionHero_desktopTitleMaxWidth);
   }
 }
+.heroMainSloganTitle{
+  font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size: 35px;
+        color: var(--matterColorDark);
+        text-align: center;
+
+  @apply --SectionHero_animation;
+  animation-delay: 2s;
+
+  @media (--viewportMedium) {
+    max-width: var(--SectionHero_desktopTitleMaxWidth);
+  }
+
+}
 
 .heroMainTitle2 {
-  font-family: 'Pacifico',normal;
+  font-family: 'Open Sans',normal;
         font-size: 80px;
         color: #65cdf4;
+        
 
   @apply --SectionHero_animation;
   animation-delay: 2s;
@@ -97,17 +116,17 @@
 }
 
 .heroSubTitle {
-  @apply --marketplaceH4FontStyles;
-
-  color: var(--matterColorLight);
-  margin: 0 0 32px 0;
+  font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 45px;
+        color: var(--matterColorDark);
+        text-align: right;
 
   @apply --SectionHero_animation;
-  animation-delay: 0.65s;
+  animation-delay: 2s;
 
   @media (--viewportMedium) {
     max-width: var(--SectionHero_desktopTitleMaxWidth);
-    margin: 0 0 47px 0;
   }
 }
 
@@ -116,9 +135,74 @@
   @apply --SectionHero_animation;
 
   animation-delay: 0.8s;
+  
 
   @media (--viewportMedium) {
     display: block;
     width: 260px;
+    
+  }
+}
+.heroButtonCustom {
+  font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 1em;
+        color: var(--successColorLight);
+        text-align: center;
+        
+
+  /* Dimensions */
+  display: block;
+  min-height: 59px;
+  margin: 0;
+  margin-top: 20px; 
+  float: right;
+  box-shadow: var();
+  
+
+  /* Padding is only for <a> elements where button styles are applied,
+  buttons elements should have zero padding */
+  padding: 20px 0 20px 0;
+
+  @media (--viewportMedium) {
+    padding: 20px 0 20px 0;
+  }
+
+  /* Borders */
+  border: none;
+  border-radius: var(--borderRadius);
+  
+
+  /* Colors */
+  background-color: #eb0089 ;
+  /*Buscar cachorros sombra*/
+  box-shadow: -11px -11px -10px black;
+
+  
+
+  /* Text */
+  text-align: center;
+  text-decoration: none;
+
+  /* Effects */
+  transition: all var(--transitionStyleButton);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: var(--marketplaceColorDark);
+    text-decoration: none;
+    box-shadow: var(--boxShadowButton);
+  }
+  &:disabled {
+    background-color: var(--matterColorNegative);
+    color: var(--matterColorLight);
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+
+  @media (--viewportMedium) {
+    min-height: 65px;
   }
 }

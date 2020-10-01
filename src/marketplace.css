@@ -23,7 +23,7 @@
   --backgroundImage: {
     /* Gradient direction and overlaying the black color on top of the image for better readability */
     background: linear-gradient(-45deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-      url('../../assets/white-and-gray-australian-shepherd-puppy-sitting-on-grass-1346086.png');
+      url('../../assets/HeaderDog.jpeg');
 
     /* Add loading color for the div */
     background-color: var(--matterColor);
@@ -44,7 +44,7 @@
 
   --marketplaceColor: #65cdf4;
   --marketplaceColorLight: #91F291;
-  --marketplaceColorDark: #FF934F;
+  --marketplaceColorDark: #eb0089;
 
   /* Used with inline CSS SVGs */
   --marketplaceColorEncoded: %23c0392b;
@@ -62,7 +62,7 @@
   --matterColorDark: #000000;
   --matterColor: #4a4a4a;
   --matterColorAnti: #b2b2b2;
-  --matterColorNegative: #e7e7e7;
+  --matterColorNegative: #eb0089;
   --matterColorBright: #fcfcfc;
   --matterColorLight: #ffffff;
 
@@ -81,12 +81,15 @@
   --boxShadowPopup: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
   --boxShadowPopupLight: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
   --boxShadowBreakdown: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
-  --boxShadowButton: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  --boxShadowButton: 10 16px 320px 20 rgba(80, 80, 80, 0.2);
   --boxShadowListingCard: 0 0 50px 0 rgba(0, 0, 0, 0.1);
   --boxShadowNotFoundPageSearch: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   --boxShadowSectionLocationHover: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
   --boxShadowBottomForm: 0 -2px 4px 0 rgba(0, 0, 0, 0.05);
   --boxShadowFilterButton: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
+  
+ 
+
 
   /* ================ Z-index base levels ================ */
 
@@ -165,7 +168,7 @@
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.2px;
-
+    
     @media (--viewportMedium) {
       /* TODO: Make sure button text aligns with the baseline */
     }
