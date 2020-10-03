@@ -11,6 +11,9 @@ import css from './SectionLocations.css';
 import SLP1 from './images/SLP1.jpg';
 import SLP2 from './images/SLP2.jpg';
 import SLP3 from './images/SLP3.jpg';
+import VerifyIcon from './images/VerifyIcon.svg';
+import FastDelivery from './images/fast-delivery.svg';
+import Certificate from './images/certificate.svg';
 
 class LocationImage extends Component {
   render() {
@@ -47,6 +50,28 @@ const SectionLocations = props => {
   return (
     <div className={classes}>
       <div className={css.title}>
+        <h1>Iconos 3</h1>
+      </div>
+      <div className={css.locationsCustom}>
+        <ul className={css.ulCustomCenter}>
+          <li className={css.liCustomCenter}>
+            <img className={css.imgCustom} src={VerifyIcon}></img>
+            <h2>Cachorros Asegurados</h2>
+            <p>Llegan o te regresamos tu dinero.</p>
+          </li>
+          <li className={css.liCustomCenter}>
+            <img className={css.imgCustom} src={FastDelivery}></img>
+            <h2>Seguimiento de envío</h2>
+            <p>Sigue el rastro de tu cachorro.</p>
+          </li>
+          <li className={css.liCustomCenter}>
+            <img className={css.imgCustom} src={Certificate}></img>
+            <h2>Criaderos reconocidos</h2>
+            <p>Lo que pagas es lo que recibes.</p>
+          </li>
+        </ul>
+      </div>
+      <div className={css.title}>
         <FormattedMessage id="SectionLocations.title" />
       </div>
       <div className={css.locations}>
@@ -64,6 +89,21 @@ const SectionLocations = props => {
           'Ruka',
           SLP3,
           '?address=Ruka%2C%20Finland&bounds=66.1704578%2C29.14246849999995%2C66.1614402%2C29.110453699999994&origin=66.16594940000002%2C29.12646110000003'
+        )}
+        {locationLink(
+          'Rovaniemi',
+          SLP2,
+          '?address=Rovaniemi%2C%20Finland&bounds=67.18452510000002%2C27.32667850000007%2C66.1553745%2C24.736871199999996&origin=66.50394779999999%2C25.729390599999988'
+        )}
+        {locationLink(
+          'Ruka',
+          SLP3,
+          '?address=Ruka%2C%20Finland&bounds=66.1704578%2C29.14246849999995%2C66.1614402%2C29.110453699999994&origin=66.16594940000002%2C29.12646110000003'
+        )}
+        {locationLink(
+          'Rovaniemi',
+          SLP2,
+          '?address=Rovaniemi%2C%20Finland&bounds=67.18452510000002%2C27.32667850000007%2C66.1553745%2C24.736871199999996&origin=66.50394779999999%2C25.729390599999988'
         )}
       </div>
     </div>
