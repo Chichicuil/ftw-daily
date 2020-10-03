@@ -19,7 +19,10 @@ const SectionHero = props => {
     <div className={classes}>
       <div className={css.heroContent}>
         <h1 className={css.heroMainSloganTitle}>
-          &quot;<FormattedMessage id="SectionHero.title" />&quot;
+          &quot;<FormattedMessage id="SectionHero.title" />
+        </h1>
+        <h1 className={css.heroMainSlogan2}>
+          <FormattedMessage id="SectionHero.title2" />&quot;
         </h1>
         <h5 className={css.heroSubTitle}>
           <FormattedMessage id="SectionHero.subTitle" />
