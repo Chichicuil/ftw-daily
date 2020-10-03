@@ -17,6 +17,31 @@
     margin-top: 33px;
   }
 }
+.locationsCustom {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+  text-align: center;
+  align-items: baseline;
+  width: 100%;
+
+  @media (--viewportMedium) {
+    flex-direction: row;
+    margin-top: 33px;
+  }
+}
+
+.ulCustomCenter{
+  display: flex;
+}
+
+.liCustomCenter{
+  padding: 3em;
+}
+
+.imgCustom{
+  width: 25%;
+}
 
 .location {
   width: 100%;
