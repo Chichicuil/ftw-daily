@@ -16,9 +16,9 @@ const SectionHero = props => {
   }; 
 
   return (
-    <div className={classes}>
-      <div className={css.heroContent}>
-        <h1 className={css.heroMainSloganTitle}>
+    <div className={classes}>  
+       <div className={css.heroContent}>
+         <h1 className={css.heroMainSloganTitle}>
           &quot;<FormattedMessage id="SectionHero.title" />
         </h1>
         <h1 className={css.heroMainSlogan2}>
@@ -37,8 +37,8 @@ const SectionHero = props => {
         >
           <FormattedMessage id="SectionHero.browseButton" />
         </NamedLink>
+        </div>
       </div>
-    </div>
   );
 };
 
