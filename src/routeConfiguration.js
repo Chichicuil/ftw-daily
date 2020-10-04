@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   AboutPage,
+  PetIdeal,
   AuthenticationPage,
   CheckoutPage,
   ContactDetailsPage,
@@ -340,6 +341,12 @@ const routeConfiguration = () => {
       authPage: 'LoginPage',
       component: props => <EmailVerificationPage {...props} />,
       loadData: EmailVerificationPage.loadData,
+    },
+    // Custom sites 
+    {
+      path: '/PetIdeal',
+      name: 'PetIdeal',
+      component: PetIdeal,
     },
   ];
 };
