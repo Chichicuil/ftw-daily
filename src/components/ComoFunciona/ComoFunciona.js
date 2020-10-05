@@ -1,11 +1,11 @@
 import React from 'react';
-import css from './PetIdeal.css';
+import css from './ComoFunciona.css';
 import { FormattedMessage } from '../../util/reactIntl';
 import classNames from 'classnames';
-import { NamedLink } from '../../components';
+import { NamedLink } from '..';
 
 
-const PetIdeal = props => {
+const ComoFunciona = props => {
   const { rootClassName, className } = props;
 
   const classes = classNames(rootClassName || css.root, className);
@@ -28,4 +28,4 @@ const PetIdeal = props => {
     );
   };
 
-export default PetIdeal;
+export default ComoFunciona;
