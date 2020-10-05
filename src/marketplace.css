@@ -39,7 +39,7 @@
       border: solid 36px var(--matterColorBright);
     }
   }
-
+    /*Fondo De Patanalla para la seccion de ComoFunciona*/
   --backgroundImage2: {
     /* Gradient direction and overlaying the black color on top of the image for better readability */
     background: linear-gradient(-45deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
@@ -59,6 +59,26 @@
       border: solid 36px var(--matterColorBright);
     }
   }
+      /*Fondo De Patanalla para la seccion de PetIdeal*/
+      --backgroundImage3: {
+        /* Gradient direction and overlaying the black color on top of the image for better readability */
+        background: linear-gradient(-45deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+          url('../../assets/AdobeStock_318348827.jpeg');
+    
+        /* Add loading color for the div */
+        background-color: var(--matterColor);
+    
+        /* Cover the whole screen with the background image */
+        background-size: cover;
+    
+        /* Align the image within the container */
+        background-position: center center;
+    
+        @media (--viewportLarge) {
+          border-radius: 40px;
+          border: solid 36px var(--matterColorBright);
+        }
+      }
 
   /* ================ Colors ================ */
 

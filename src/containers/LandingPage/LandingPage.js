@@ -18,7 +18,8 @@ import {
   Footer,
 } from '../../components';
 import { TopbarContainer } from '../../containers';
-import ComoFunciona from '../../components/ComoFunciona/ComoFunciona.js'
+import ComoFunciona from '../../components/ComoFunciona/ComoFunciona.js';
+import PetIdeal from '../../components/PetIdeal/PetIdeal.js'
 
 import facebookImage from '../../assets/saunatimeFacebook-1200x630.jpg';
 import twitterImage from '../../assets/saunatimeTwitter-600x314.jpg';
@@ -61,6 +62,12 @@ export const LandingPageComponent = props => {
         <LayoutWrapperMain>
           <div className={css.heroContainer}>
             <SectionHero className={css.hero} history={history} location={location} />
+          </div>
+          <div className={css.heroContainer}>
+            <ComoFunciona className={css.hero} />
+          </div>
+          <div className={css.heroContainer}>
+            <PetIdeal className={css.hero} />
           </div>
           <div className={css.heroContainer}>
             <ComoFunciona className={css.hero} />
