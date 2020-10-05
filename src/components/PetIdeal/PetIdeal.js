@@ -17,14 +17,12 @@ const PetIdeal = props => {
   <div className={classes}>  
     <div className={css.heroContent}>
       <h1 className={css.heroMainSloganTitle}>
-        COMO FUNCIONA?
+        TU PET IDEAL
       </h1>
-      <button className={css.heroButtonCustom}>ESCOGE TU PUPPY</button>
-      <button className={css.heroButtonCustom}>PAGO SEGURO</button>
-      <button className={css.heroButtonCustom}>SELECCIONA TU ENVIO</button>
+      <p className={css.heroMainSloganTitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <button className={css.heroButtonCustom}>INICIAR TEST</button>
     </div>
   </div>
-
     );
   };
 
