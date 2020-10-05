@@ -27,9 +27,9 @@ import css from './PetIdeal.css';
                   <p>Answer: Lorem ipsum</p>
                 </div>
               </LayoutWrapperMain>
-      
+              
               <LayoutWrapperFooter>
-                <Footer />
+              <Footer />
               </LayoutWrapperFooter>
             </LayoutSingleColumn>
           </StaticPage>

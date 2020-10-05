@@ -13,11 +13,12 @@ import {
   SectionLocations,
   LayoutSingleColumn,
   LayoutWrapperTopbar,
-  LayoutWrapperMain,
+  LayoutWrapperMain,  
   LayoutWrapperFooter,
   Footer,
 } from '../../components';
 import { TopbarContainer } from '../../containers';
+import PetIdeal from '../../components/PetIdeal/PetIdeal.js'
 
 import facebookImage from '../../assets/saunatimeFacebook-1200x630.jpg';
 import twitterImage from '../../assets/saunatimeTwitter-600x314.jpg';
@@ -55,12 +56,16 @@ export const LandingPageComponent = props => {
     >
       <LayoutSingleColumn>
         <LayoutWrapperTopbar>
-          <TopbarContainer />
+        <TopbarContainer />
         </LayoutWrapperTopbar>
         <LayoutWrapperMain>
           <div className={css.heroContainer}>
             <SectionHero className={css.hero} history={history} location={location} />
           </div>
+          <div className={css.heroContainer}>
+            <PetIdeal className={css.hero} />
+          </div>
+          
           <ul className={css.sections}>
             <li className={css.section}>
               <div className={css.sectionContentFirstChild}>
