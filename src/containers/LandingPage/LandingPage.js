@@ -18,6 +18,7 @@ import {
   Footer,
 } from '../../components';
 import { TopbarContainer } from '../../containers';
+//Nuevos Componentes de PuppyCo
 import ComoFunciona from '../../components/ComoFunciona/ComoFunciona.js';
 import PetIdeal from '../../components/PetIdeal/PetIdeal.js'
 
