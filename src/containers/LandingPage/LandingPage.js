@@ -63,6 +63,7 @@ export const LandingPageComponent = props => {
           <div className={css.heroContainer}>
             <SectionHero className={css.hero} history={history} location={location} />
           </div>
+<<<<<<< Updated upstream
           <div className={css.heroContainer}>
             <ComoFunciona className={css.hero} />
           </div>
@@ -75,16 +76,16 @@ export const LandingPageComponent = props => {
 
           <ul className={css.sections}>
             <li className={css.section}>
+=======
+>>>>>>> Stashed changes
               <div className={css.sectionContentFirstChild}>
                 <SectionLocations />
               </div>
-            </li>
             <li className={css.section}>
               <div className={css.sectionContent}>
                 <SectionHowItWorks />
               </div>
             </li>
-          </ul>
         </LayoutWrapperMain>
         <LayoutWrapperFooter>
           <Footer />

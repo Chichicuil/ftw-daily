@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< Updated upstream
 import css from './ComoFunciona.css';
 import { FormattedMessage } from '../../util/reactIntl';
 import classNames from 'classnames';
@@ -27,5 +28,11 @@ const ComoFunciona = props => {
 
     );
   };
+=======
+
+const ComoFunciona = () => {
+    return <h1>Aquí dice como funciona</h1>
+};
+>>>>>>> Stashed changes
 
 export default ComoFunciona;
