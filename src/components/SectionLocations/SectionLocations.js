@@ -14,7 +14,6 @@ import SLP3 from './images/SLP3.jpg';
 import VerifyIcon from './images/VerifyIcon.svg';
 import FastDelivery from './images/fast-delivery.svg';
 import Certificate from './images/certificate.svg';
-
 class LocationImage extends Component {
   render() {
     const { alt, ...rest } = this.props;

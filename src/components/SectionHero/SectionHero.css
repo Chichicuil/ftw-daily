@@ -58,7 +58,6 @@
 
 
 .heroContent {
-
   @media (--viewportMedium) {
     margin: 0 7.5vw 0 7.5vw;
   }
@@ -135,6 +134,7 @@
   }
 }
 .heroSubTitle {
+
   font-family: 'Open Sans', sans-serif;
         font-weight: 600;
         font-size: 30px;

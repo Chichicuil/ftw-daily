@@ -24,9 +24,9 @@
     /* Gradient direction and overlaying the black color on top of the image for better readability */
     background: linear-gradient(-45deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
       url('../../assets/HeaderDog.jpeg');
-
     /* Add loading color for the div */
     background-color: var(--matterColor);
+  
 
     /* Cover the whole screen with the background image */
     background-size: cover;
@@ -37,6 +37,16 @@
     @media (--viewportLarge) {
       border-radius: 40px;
       border: solid 36px var(--matterColorBright);
+    }
+    {
+      --backgroundImage2: {
+        background: linear-gradient(-45deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+      url('../../assets/ComoFunciona.jpeg');
+      background-size: cover;
+      background-position: center center;
+
+
+      }
     }
   }
     /*Fondo De Patanalla para la seccion de ComoFunciona*/
