@@ -15,13 +15,15 @@ const PetIdeal = props => {
 
     return (
   <div className={classes}>  
-    <div className={css.heroContent}>
+    <div className={css.petContent}>
     <div className={css.rightAdjCont}>
-      <h1 className={css.heroMainSloganTitle}>
+      <h1 className={css.petIdealTitle}>
         TU PET IDEAL
       </h1>
-      <p className={css.heroMainSloganTitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <button className={css.heroButtonCustom}>INICIAR TEST</button>
+      <p className={css.petIdealText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <div className={css.rightAdjButton}>
+      <button className={css.petButtonCustom}>INICIAR TEST</button>
+      </div>
     </div>
     </div>
   </div>

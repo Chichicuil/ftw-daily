@@ -22,6 +22,7 @@ import { TopbarContainer } from '../../containers';
 import ComoFunciona from '../../components/ComoFunciona/ComoFunciona.js';
 import PetIdeal from '../../components/PetIdeal/PetIdeal.js';
 import NuestrosClientes from '../../components/NuestrosClientes/NuestrosClientes.js';
+import ReAssurance from '../../components/ReAssurance/ReAssurance.js';
 
 
 import facebookImage from '../../assets/saunatimeFacebook-1200x630.jpg';
@@ -73,7 +74,7 @@ export const LandingPageComponent = props => {
             <PetIdeal className={css.hero} />
           </div>
           <div className={css.heroContainer}>
-            <ComoFunciona className={css.hero} />
+            <ReAssurance className={css.hero} />
           </div>
           <div className={css.heroContainer}>
             <NuestrosClientes className={css.hero} />

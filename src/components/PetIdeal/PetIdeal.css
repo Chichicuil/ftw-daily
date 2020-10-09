@@ -57,7 +57,7 @@
 }
 
 
-.heroContent {
+.petContent {
 overflow: auto;
 width: auto;
 height: auto;
@@ -81,20 +81,19 @@ float: right;
     padding: 0 36px 0 36px;
   }
 }
-
-.heroMainTitle {
-  
-  @apply --marketplaceHeroTitleFontStyles;
-  color: var(--matterColorLight);
-
-  @apply --SectionHero_animation;
-  animation-delay: 2s;
-
-  @media (--viewportMedium) {
-    max-width: var(--SectionHero_desktopTitleMaxWidth);
-  }
+.rightAdjCont {
+  float: right;
+  display: block;
+  height: 40em;
+  margin: 0.5;
+  margin-bottom: 15px;
+  width: 40em; 
+  padding-right: 3em;
 }
-.heroMainSloganTitle{
+
+
+
+.petIdealTitle{
   margin-top: 1.5em;
   font-family: 'Open Sans', sans-serif;
         font-weight: 270;
@@ -111,11 +110,12 @@ float: right;
 
 }
 
-.heroMainTitle2 {
-  font-family: 'Open Sans',normal;
-        font-size: 80px;
-        color: #65cdf4;
-        
+.petIdealText {
+  font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        color: var(--matterColorDark);
+        text-align: justify;
+        text-justify: inter-word;
 
   @apply --SectionHero_animation;
   animation-delay: 2s;
@@ -124,74 +124,30 @@ float: right;
     max-width: var(--SectionHero_desktopTitleMaxWidth);
   }
 }
-.rightAdjCont {
+.rightAdjButton {
+  padding-left: 13em;
   float: right;
   display: block;
   height: 40em;
   margin: 0.5;
   margin-bottom: 15px;
-  width: 40em;
-  
+  width: 40em; 
 }
 
-.heroMainSlogan2 {
-  font-family: 'Open Sans', sans-serif;
-        font-weight: 270;
-        font-size: 30px;
-        color: var(--matterColorDark);
-        text-align: right;
-
-  @apply --SectionHero_animation;
-  animation-delay: 2s;
-
-  @media (--viewportMedium) {
-    max-width: var(--SectionHero_desktopTitleMaxWidth);
-  }
-}
-.heroSubTitle {
-  font-family: 'Open Sans', sans-serif;
-        font-weight: 600;
-        font-size: 30px;
-        color: var(--matterColorDark);
-        text-align: right;
-
-  @apply --SectionHero_animation;
-  animation-delay: 2s;
-
-  @media (--viewportMedium) {
-    max-width: var(--SectionHero_desktopTitleMaxWidth);
-  }
-}
-
-
-.heroButton {
-  @apply --marketplaceButtonStyles;
-  @apply --SectionHero_animation;
-
-  animation-delay: 0.8s;
-  
-
-  @media (--viewportMedium) {
-    display: block;
-    width: 260px;
-    
-  }
-}
-
-.heroButtonCustom {
-  padding-left: 2em;
+.petButtonCustom {
   font-family: 'Montserrat',400;
         font-weight: 500;
         font-size: 20px;
-        color: var(--successColorLight);
+        color: var(--matterColorLight);
         text-align: center;
 
   /* Dimensions */
   display: block;
-  min-height: 39px;
+  min-height: 20px;
   margin: 0;
   margin-bottom: 15px;
-  width: 250px;
+  width: 280px;
+  padding-left: 10px;
   
 
   /* Padding is only for <a> elements where button styles are applied,
@@ -208,9 +164,9 @@ float: right;
   
 
   /* Colors */
-  background-color: #eb0089 ;
-  /*Buscar cachorros sombra*/
-  box-shadow: -11px -11px -10px black;
+  background-color: var(--matterColorBlue);
+  /*Botones sombra*/
+  box-shadow: -5px 4px 4px 5px rgba(0, 0, 0, 0.2);
 
   
 
