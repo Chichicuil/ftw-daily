@@ -1,7 +1,7 @@
 @import '../../marketplace.css';
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet');  
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet')
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap');
+@import url('https://kit.fontawesome.com/ef59ef56d7.js');
 
 :root {
   /*
@@ -44,7 +44,7 @@
 }
 
 .root {
-  @apply --backgroundImage2;
+  background-color: white ;
   width: 100%;
   height: 100%;
   /* Text positioning is done with paddings */
@@ -53,39 +53,44 @@
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
-
+  padding-left: 10em;
 }
 
 
-.comoFuncionaContent {
+.nuestrosClientesContent {
 overflow: auto;
 width: auto;
 height: auto;
-
-
+align-content: center;
+float: right;
 
   @media (--viewportMedium) {
     margin: 0 7.5vw 0 7.5vw;
   }
 
-  /* Special viewport for adjusting the heroContent's placement */
+  /* Special viewport for adjusting the Content's placement */
 
   @media only screen and (min-width: 1025px) and (max-width: 1366px) {
-    padding: 0 36px 0 36px;
+    padding-left: 7em;
   }
 
   @media only screen and (min-width: 1367px) {
     margin: 0 auto;
     max-width: calc(1052px + 36px + 36px);
     width: 100%;
-    padding: 0 36px 0 36px;
+    padding-left: 7em;
   }
 }
 
-.heroMainTitle {
-  
-  @apply --marketplaceHeroTitleFontStyles;
-  color: var(--matterColorLight);
+
+.nuestrosClientesTitle{
+  margin-top: 1.5em;
+  font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 45px;
+        letter-spacing: 2px;
+        color: var(--matterColorDark);
+        text-align: center;
 
   @apply --SectionHero_animation;
   animation-delay: 2s;
@@ -94,10 +99,43 @@ height: auto;
     max-width: var(--SectionHero_desktopTitleMaxWidth);
   }
 }
-.comoFuncionaTitle{
+.nuestrosClientesSmallText{
   margin-top: 1.5em;
   font-family: 'Open Sans', sans-serif;
-        font-weight: 290;
+        font-weight: 270;
+        font-size: 15px;
+        color: var(--matterColorDark);
+        text-align: center;
+
+  @apply --SectionHero_animation;
+  animation-delay: 2s;
+
+  @media (--viewportMedium) {
+    max-width: var(--SectionHero_desktopTitleMaxWidth);
+  }
+
+}
+
+.nuestrosClientesBigText {
+   margin-top: 1.5em;
+  font-family: 'Open Sans', sans-serif;
+        font-weight: 270;
+        font-size: 30px;
+        color: var(--matterColorDark);
+        text-align: center;
+        
+
+  @apply --SectionHero_animation;
+  animation-delay: 2s;
+
+  @media (--viewportMedium) {
+    max-width: var(--SectionHero_desktopTitleMaxWidth);
+  }
+}
+
+.heroMainSlogan2 {
+  font-family: 'Open Sans', sans-serif;
+        font-weight: 270;
         font-size: 30px;
         color: var(--matterColorDark);
         text-align: right;
@@ -108,20 +146,42 @@ height: auto;
   @media (--viewportMedium) {
     max-width: var(--SectionHero_desktopTitleMaxWidth);
   }
+}
+.heroSubTitle {
+  font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 30px;
+        color: var(--matterColorDark);
+        text-align: right;
 
+  @apply --SectionHero_animation;
+  animation-delay: 2s;
+
+  @media (--viewportMedium) {
+    max-width: var(--SectionHero_desktopTitleMaxWidth);
+  }
 }
 
 
-.rightAdjButtons{
-  float: right;
+.heroButton {
+  @apply --marketplaceButtonStyles;
+  @apply --SectionHero_animation;
+
+  animation-delay: 0.8s;
+  
+
+  @media (--viewportMedium) {
+    display: block;
+    width: 260px;
+    
+  }
 }
 
-.comoFuncionaButtonCustom {
-
+.heroButtonCustom {
   font-family: 'Montserrat',400;
         font-weight: 500;
         font-size: 20px;
-        color: var(--matterColorLight);
+        color: var(--successColorLight);
         text-align: center;
 
   /* Dimensions */
@@ -130,7 +190,6 @@ height: auto;
   margin: 0;
   margin-bottom: 15px;
   width: 250px;
-  padding-left: 10px;
   
 
   /* Padding is only for <a> elements where button styles are applied,
@@ -147,9 +206,9 @@ height: auto;
   
 
   /* Colors */
-  background-color: var(--matterColorBlue);
-  /*Botones sombra*/
-  box-shadow: -5px 4px 4px 5px rgba(0, 0, 0, 0.2);
+  background-color: #eb0089 ;
+  /*Buscar cachorros sombra*/
+  box-shadow: -11px -11px -10px black;
 
   
 

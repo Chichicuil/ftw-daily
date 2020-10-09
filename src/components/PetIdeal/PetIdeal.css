@@ -124,6 +124,15 @@ float: right;
     max-width: var(--SectionHero_desktopTitleMaxWidth);
   }
 }
+.rightAdjCont {
+  float: right;
+  display: block;
+  height: 40em;
+  margin: 0.5;
+  margin-bottom: 15px;
+  width: 40em;
+  
+}
 
 .heroMainSlogan2 {
   font-family: 'Open Sans', sans-serif;
@@ -170,6 +179,7 @@ float: right;
 }
 
 .heroButtonCustom {
+  padding-left: 2em;
   font-family: 'Montserrat',400;
         font-weight: 500;
         font-size: 20px;

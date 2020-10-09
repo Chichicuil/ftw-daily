@@ -20,7 +20,9 @@ import {
 import { TopbarContainer } from '../../containers';
 //Nuevos Componentes de PuppyCo
 import ComoFunciona from '../../components/ComoFunciona/ComoFunciona.js';
-import PetIdeal from '../../components/PetIdeal/PetIdeal.js'
+import PetIdeal from '../../components/PetIdeal/PetIdeal.js';
+import NuestrosClientes from '../../components/NuestrosClientes/NuestrosClientes.js';
+
 
 import facebookImage from '../../assets/saunatimeFacebook-1200x630.jpg';
 import twitterImage from '../../assets/saunatimeTwitter-600x314.jpg';
@@ -64,7 +66,6 @@ export const LandingPageComponent = props => {
           <div className={css.heroContainer}>
             <SectionHero className={css.hero} history={history} location={location} />
           </div>
-<<<<<<< Updated upstream
           <div className={css.heroContainer}>
             <ComoFunciona className={css.hero} />
           </div>
@@ -74,19 +75,18 @@ export const LandingPageComponent = props => {
           <div className={css.heroContainer}>
             <ComoFunciona className={css.hero} />
           </div>
-
+          <div className={css.heroContainer}>
+            <NuestrosClientes className={css.hero} />
+          </div>
           <ul className={css.sections}>
             <li className={css.section}>
-=======
->>>>>>> Stashed changes
-              <div className={css.sectionContentFirstChild}>
-                <SectionLocations />
-              </div>
+            </li>
             <li className={css.section}>
               <div className={css.sectionContent}>
                 <SectionHowItWorks />
               </div>
             </li>
+          </ul>
         </LayoutWrapperMain>
         <LayoutWrapperFooter>
           <Footer />
