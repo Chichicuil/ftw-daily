@@ -45,7 +45,6 @@
       background-size: cover;
       background-position: center center;
 
-
       }
     }
   }
@@ -89,6 +88,23 @@
           border: solid 36px var(--matterColorBright);
         }
       }
+      
+      /*Fondo de pantalla pra la sección Re-Assurance*/
+      --backgroundImage4: {
+        background: linear-gradient(-45deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+      url('../../assets/Reassurance.jpeg');
+      background-size: cover;
+      background-position: center center;
+
+      @media (--viewportLarge) {
+        border-radius: 40px;
+        border: solid 36px var(--matterColorBright);
+        }
+
+      }
+
+    
+      
 
   /* ================ Colors ================ */
 
@@ -111,10 +127,11 @@
 
   --matterColorDark: #000000;
   --matterColor: #4a4a4a;
-  --matterColorAnti: #b2b2b2;
+  --matterColorAnti: #f8d544; 
   --matterColorNegative: #eb0089;
   --matterColorBright: #fcfcfc;
   --matterColorLight: #ffffff;
+  --matterColorBlue: rgba(65, 171, 214); 
 
   --matterColorLightTransparent: rgba(255, 255, 255, 0.65);
 

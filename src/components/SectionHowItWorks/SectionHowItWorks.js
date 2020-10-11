@@ -26,6 +26,7 @@ const SectionHowItWorks = props => {
           </h2>
           <p>
             <FormattedMessage id="SectionHowItWorks.part1Text" />
+            <h1>hola</h1>
           </p>
         </div>
 
