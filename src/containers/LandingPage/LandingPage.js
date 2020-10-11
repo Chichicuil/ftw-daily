@@ -21,7 +21,9 @@ import { TopbarContainer } from '../../containers';
 //Nuevos Componentes de PuppyCo
 import ComoFunciona from '../../components/ComoFunciona/ComoFunciona.js';
 import PetIdeal from '../../components/PetIdeal/PetIdeal.js'
+import Contact from '../../components/Contact/Contact.js'
 
+//Media Images
 import facebookImage from '../../assets/saunatimeFacebook-1200x630.jpg';
 import twitterImage from '../../assets/saunatimeTwitter-600x314.jpg';
 import css from './LandingPage.css';
@@ -61,32 +63,26 @@ export const LandingPageComponent = props => {
         <TopbarContainer />
         </LayoutWrapperTopbar>
         <LayoutWrapperMain>
-          <div className={css.heroContainer}>
-            <SectionHero className={css.hero} history={history} location={location} />
-          </div>
-<<<<<<< Updated upstream
-          <div className={css.heroContainer}>
+
+          <SectionHero className={css.hero} history={history} location={location} />
+
+
             <ComoFunciona className={css.hero} />
-          </div>
-          <div className={css.heroContainer}>
+
+
             <PetIdeal className={css.hero} />
-          </div>
-          <div className={css.heroContainer}>
+
+
             <ComoFunciona className={css.hero} />
-          </div>
+
 
           <ul className={css.sections}>
             <li className={css.section}>
-=======
->>>>>>> Stashed changes
               <div className={css.sectionContentFirstChild}>
-                <SectionLocations />
-              </div>
-            <li className={css.section}>
-              <div className={css.sectionContent}>
-                <SectionHowItWorks />
+                <Contact />
               </div>
             </li>
+          </ul>
         </LayoutWrapperMain>
         <LayoutWrapperFooter>
           <Footer />

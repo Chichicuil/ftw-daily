@@ -14,15 +14,16 @@ const PetIdeal = props => {
   }; 
 
     return (
-  <div className={classes}>  
-    <div className={css.heroContent}>
-      <h1 className={css.heroMainSloganTitle}>
-        TU PET IDEAL
-      </h1>
-      <p className={css.heroMainSloganTitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <button className={css.heroButtonCustom}>INICIAR TEST</button>
-    </div>
-  </div>
+      <div class="jumbotron jumbotron-fluid" className={css.jumbotron}>
+          <div class="container" className={css.marginSection}>
+            <h1>¿Cómo Funciona?</h1>
+            <div class="d-flex flex-column pr-5">
+            <button type="button" class="btn btn-primary btn-lg mb-3">Escoge Tu Puppy</button>
+            <button type="button" class="btn btn-primary btn-lg mb-3">Pago Seguro</button>
+            <button type="button" class="btn btn-primary btn-lg">Selecciona tu envio</button>
+            </div>
+            </div>
+        </div>
     );
   };
 
