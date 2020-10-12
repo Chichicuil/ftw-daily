@@ -8,24 +8,17 @@ import { NamedLink } from '..';
 const ReAssurance = props => {
   const { rootClassName, className } = props;
 
-  const classes = classNames(rootClassName || css.root, className);
-  const StylePadding = {
-    padding: "15px",
-  }; 
-
     return (
-  <div className={classes}>  
-    <div className={css.reAssuranceContent}> 
-      <h1 className={css.reAssuranceTitle}>
-        RE-ASSURANCE
-      </h1>
-      <div className={css.rightAdjButtons}>
-      <button className={css.reAssuranceButtonCustom}>SIMPLE</button>
-      <button className={css.reAssuranceButtonCustom}>SEGURO</button>
-      <button className={css.reAssuranceButtonCustom}>GARANTIZADO</button>
-      </div>
-    </div>
-  </div>
+      <div class="jumbotron jumbotron-fluid" className={css.jumbotron}>
+          <div class="container" className={css.marginSection}>
+            <h1>RE-ASSURANCE</h1>
+            <div class="d-flex flex-column pr-5">
+            <button type="button" class="btn btn-primary btn-lg mb-3">SIMPLE</button>
+            <button type="button" class="btn btn-primary btn-lg mb-3">SEGURO</button>
+            <button type="button" class="btn btn-primary btn-lg">GARANTIZADO</button>
+            </div>
+          </div>
+        </div>
 
     );
   };
