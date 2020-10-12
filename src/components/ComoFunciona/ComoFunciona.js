@@ -17,8 +17,6 @@ const ComoFunciona = props => {
             <button type="button" class="btn btn-primary btn-lg mb-3">Pago Seguro</button>
             <button type="button" class="btn btn-primary btn-lg">Selecciona tu envio</button>
             </div>
-            
-
           </div>
         </div>
 
