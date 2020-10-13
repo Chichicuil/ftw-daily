@@ -10,12 +10,19 @@ const ReAssurance = props => {
 
     return (
       <div class="jumbotron jumbotron-fluid" className={css.jumbotron}>
-          <div class="container" className={css.marginSection}>
-            <h1>RE-ASSURANCE</h1>
-            <div class="d-flex flex-column pr-5">
-            <button type="button" class="btn btn-primary btn-lg mb-3">SIMPLE</button>
-            <button type="button" class="btn btn-primary btn-lg mb-3">SEGURO</button>
-            <button type="button" class="btn btn-primary btn-lg">GARANTIZADO</button>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-6">
+
+              </div>
+              <div class="col-6 mt-5 align-content-center">
+              <h1 class="text-center mt-5">RE-ASSURANCE</h1>
+              <div class="container d-flex flex-column w-50">
+                <button type="button" className={css.buttonReAssuranceCustom}>SIMPLE</button>
+                <button type="button" className={css.buttonReAssuranceCustom}>SEGURO</button>
+                <button type="button" className={css.buttonReAssuranceCustom}>GARANTIZADO</button>
+              </div>
+              </div>
             </div>
           </div>
         </div>

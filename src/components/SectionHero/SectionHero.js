@@ -15,8 +15,8 @@ const SectionHero = props => {
   <div class="jumbotron jumbotron-fluid" className={css.jumbotron}>
     <div class="container" className={css.marginSection}>
       <h1>&quot;La forma más fácil y segura <br /> de encontrar a tu mejor amigo&quot;</h1>
-      <h1 class="mt-0">-PuppyCo-</h1>
-      <button type="button" class="btn btn-primary btn-lg">Buscar Cachorros</button>
+      <h1 class="mt-0 mr-5">-PuppyCo.-</h1>
+      <button type="button" className={css.customButton}>BUSCAR CACHORROS</button>
     </div>
   </div>
 

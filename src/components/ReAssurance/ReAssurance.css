@@ -17,7 +17,7 @@
   flex-direction: column!important;
   display: flex!important;
   width: 100%;
-  padding-right: 100px;
+  padding-right: 90px;
   padding-left: 100px;
   margin-right: auto;
   margin-left: auto;
@@ -28,4 +28,25 @@
   flex-direction: column!important;
   display: flex!important;
   width: 100%;
+}
+
+.buttonReAssuranceCustom {
+  margin-bottom: 1rem!important;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  padding: .5rem 0.5rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    color: #fff;
+    background-color: #f8d64c;
+    border-color: #fff;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    margin-top: 20px;
+    /* border: 1px solid transparent; */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
 }

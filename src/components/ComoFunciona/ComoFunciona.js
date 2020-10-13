@@ -11,11 +11,11 @@ const ComoFunciona = props => {
     return (
       <div class="jumbotron jumbotron-fluid" className={css.jumbotron}>
           <div class="container" className={css.marginSection}>
-            <h1>¿Cómo Funciona?</h1>
+            <h1>¿CÓMO FUNCIONA?</h1>
             <div class="d-flex flex-column pr-5">
-            <button type="button" class="btn btn-primary btn-lg mb-3">Escoge Tu Puppy</button>
-            <button type="button" class="btn btn-primary btn-lg mb-3">Pago Seguro</button>
-            <button type="button" class="btn btn-primary btn-lg">Selecciona tu envio</button>
+            <button type="button" className={css.buttonCfCustom}>ESCOGE TU PUPPY</button>
+            <button type="button" className={css.buttonCfCustom}>PAGO SEGURO</button>
+            <button type="button" className={css.buttonCfCustom}>SELECCIONA TU ENVIO</button>
             </div>
           </div>
         </div>

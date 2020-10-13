@@ -26,7 +26,7 @@ const PetIdeal = props => {
                       <p class="text-center text-light">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus
                       </p>
-                      <button type="button" class="btn btn-primary btn-lg">
+                      <button type="button" className={css.buttonPetIdealCustom}>
                         INICIAR TEST
                       </button>
                 </div>
