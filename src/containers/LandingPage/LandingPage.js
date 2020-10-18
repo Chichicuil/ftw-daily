@@ -64,8 +64,9 @@ export const LandingPageComponent = props => {
         <TopbarContainer />
         </LayoutWrapperTopbar>
         <LayoutWrapperMain>
-
+          <section>
             <SectionHero history={history} location={location} />
+          </section>
 
 
             <ComoFunciona />

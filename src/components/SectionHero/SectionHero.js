@@ -14,12 +14,13 @@ const SectionHero = props => {
   return (
 
   <div className="container-fluid">
-    <div className="row">
-      <div className="col-6">
-        <img className="img-fluid" src={Image1}></img>
+    <div className="row flex-fill">
+      <div className="col-md-7">
+        <img className="img-fluid" alt="Responsive image"  src={Image1}></img>
       </div>
-      <div className="col-6 text-center">
-        <h1>SLOGAN</h1>
+      <div className="col-md-5 d-flex align-content-center flex-wrap">
+        <h1>&quot;La forma mas facil y segura <br></br>de encontrar a tu mejor amigo&quot;</h1>
+        <button className="btn peach-gradient">Buscar Cachorros</button>
       </div>
     </div>
   </div>
