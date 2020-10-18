@@ -13,13 +13,13 @@ const SectionHero = props => {
 
   return (
 
-  <div className="cotainer-fluid">
+  <div className="container-fluid">
     <div className="row">
       <div className="col-6">
         <img className="img-fluid" src={Image1}></img>
       </div>
-      <div className="col-6">
-        <h1>TEXT</h1>
+      <div className="col-6 text-center">
+        <h1>SLOGAN</h1>
       </div>
     </div>
   </div>

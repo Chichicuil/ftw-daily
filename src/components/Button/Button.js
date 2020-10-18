@@ -20,7 +20,7 @@ class Button extends Component {
       rootClassName,
       spinnerClassName,
       checkmarkClassName,
-      inProgress,
+      inProgress, 
       ready,
       disabled,
       ...rest
