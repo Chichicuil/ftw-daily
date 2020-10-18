@@ -64,18 +64,20 @@ export const LandingPageComponent = props => {
         <TopbarContainer />
         </LayoutWrapperTopbar>
         <LayoutWrapperMain>
-          <section>
+          <section className="vh-100">
             <SectionHero history={history} location={location} />
           </section>
-
-
+          <section className="vh-100">
             <ComoFunciona />
+          </section>
 
-
+          <section className="vh-100">
             <PetIdeal />
+          </section>
 
-
+          <section className="vh-100">
             <ReAssurance />
+            </section>
 
 
           <ul className={css.sections}>

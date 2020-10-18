@@ -11,8 +11,8 @@ const PetIdeal = props => {
           return (
             <div className="container-fluid">
             <div className="row">
-              <div className="col-6">
-                <img className="img-fluid" src={Image4}></img>
+            <div className="col-md-6">
+                <img className="img-fluid" alt="Responsive image" src={Image4}></img>
               </div>
               <div className="col-6 text-center">
 
