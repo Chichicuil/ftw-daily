@@ -1,39 +1,26 @@
 import React from 'react';
 import { StaticPage, TopbarContainer } from '../../containers';
-import {
-  LayoutSingleColumn,
-  LayoutWrapperTopbar,
-  LayoutWrapperMain,
-  LayoutWrapperFooter,
-  Footer,
-} from '../../components';
 
-import css from './PetIdeal.css';
+import Image4 from '../../assets/PetIdeal2.jpeg';
 
-    const PetIdeal = () => {
-        // prettier-ignore
-        return (
-          <StaticPage>
-            <LayoutSingleColumn>
-              <LayoutWrapperTopbar>
-                <TopbarContainer />
-              </LayoutWrapperTopbar>
+
+
+const PetIdeal = props => {
+  const { rootClassName, className } = props;
+
+          return (
+            <div className="container-fluid">
+            <div className="row">
+              <div className="col-6">
+                <img className="img-fluid" src={Image4}></img>
+              </div>
+              <div className="col-6 text-center">
+                <h1>Re-Assurance</h1>
+              </div>
+            </div>
+          </div>
       
-              <LayoutWrapperMain className={css.mainWrapper}>
-                <h1>Frequently Asked Questions</h1>
-      
-                <div>
-                  <h3>Question 1?</h3>
-                  <p>Answer: Lorem ipsum</p>
-                </div>
-              </LayoutWrapperMain>
-              
-              <LayoutWrapperFooter>
-              <Footer />
-              </LayoutWrapperFooter>
-            </LayoutSingleColumn>
-          </StaticPage>
-        );
-};
+          );
+        };
 
 export default PetIdeal;
