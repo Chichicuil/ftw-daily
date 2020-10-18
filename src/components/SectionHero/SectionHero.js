@@ -3,6 +3,7 @@ import { string } from 'prop-types';
 import { FormattedMessage } from '../../util/reactIntl';
 import classNames from 'classnames';
 import { NamedLink } from '..';
+import Image1 from '../../assets/HeaderDog.jpeg';
 
 import css from './SectionHero.css';
 import { right } from 'inquirer/lib/utils/readline';
@@ -12,11 +13,14 @@ const SectionHero = props => {
 
   return (
 
-  <div class="jumbotron jumbotron-fluid" className={css.jumbotron}>
-    <div class="container" className={css.marginSection}>
-      <h1>&quot;La forma más fácil y segura <br /> de encontrar a tu mejor amigo&quot;</h1>
-      <h1 class="mt-0 mr-5">-PuppyCo.-</h1>
-      <button type="button" className={css.customButton}>BUSCAR CACHORROS</button>
+  <div className="cotainer-fluid">
+    <div className="row">
+      <div className="col-6">
+        <img className="img-fluid" src={Image1}></img>
+      </div>
+      <div className="col-6">
+        <h1>TEXT</h1>
+      </div>
     </div>
   </div>
 
