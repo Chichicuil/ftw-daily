@@ -14,7 +14,7 @@ const SectionHero = props => {
   return (
 
   <div className="container-fluid">
-    <div className="row flex-fill">
+    <div className="row">
       <div className="col-md-7">
         <img className="img-fluid" alt="Responsive image"  src={Image1}></img>
       </div>

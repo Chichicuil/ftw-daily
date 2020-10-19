@@ -17,10 +17,13 @@ const ReAssurance = props => {
         </div>
         <div className="col-6 text-center">
         
-          <h1>Re-Assurance</h1>
-          <button type="button"class="btn btn-yellow">SIMPLE </button>
-          <button type="button"class="btn btn-yellow">SEGURO</button>
-          <button type="button"class="btn btn-yellow">GARANTIZADO</button>
+          <h1 className="text-center">RE-ASSURANCE</h1>
+          <div className="container d-flex align-middle flex-column align-items-center">
+            <button type="button" class="btn btn-outline-warning w-50 mb-4">SIMPLE</button>
+            <button type="button" class="btn btn-outline-warning w-50 mb-4">SEGURO</button>
+            <button type="button" class="btn btn-outline-warning w-50 mb-4">GARANTIZADO</button>
+          </div>
+      
         </div>
       </div>
     </div>
