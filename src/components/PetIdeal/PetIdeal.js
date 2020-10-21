@@ -1,13 +1,10 @@
 import React from 'react';
-import { StaticPage, TopbarContainer } from '../../containers';
 
 import Image4 from '../../assets/PetIdeal2.jpeg';
 
 
 
 const PetIdeal = props => {
-  const { rootClassName, className } = props;
-
           return (
             <div className="container-fluid">
             <div className="row">

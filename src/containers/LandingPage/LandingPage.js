@@ -10,8 +10,6 @@ import config from '../../config';
 import {
   Page,
   SectionHero,
-  SectionHowItWorks,
-  SectionLocations,
   LayoutSingleColumn,
   LayoutWrapperTopbar,
   LayoutWrapperMain,  
@@ -85,6 +83,12 @@ export const LandingPageComponent = props => {
           <section className="">
           <Contact />
           </section>
+
+          <section>
+          <NuestrosClientes />
+          </section>
+
+
         </LayoutWrapperMain>
         <LayoutWrapperFooter>
           <Footer />

@@ -1,18 +1,13 @@
 import React from 'react';
-import css from './ComoFunciona.css';
-import { FormattedMessage } from '../../util/reactIntl';
-import classNames from 'classnames';
-import { NamedLink } from '..';
 import Image2 from '../../assets/ComoFunciona.jpeg';
 
 const ComoFunciona = props => {
-  const { rootClassName, className } = props;
 
     return (
       <div className="jumbotron">
       <div className="row ">
         <div className="col-md-6">
-          <img className="img-fluid" alt="Responsive image" src={Image2}></img>
+          <img className="img-fluid" alt="Responsive" src={Image2}></img>
         </div>
         <div className="col-md-6">
           <h1 className="text-center">¿CÓMO FUNCIONA?</h1>
