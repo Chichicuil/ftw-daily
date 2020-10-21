@@ -13,22 +13,21 @@ const NuestrosClientes = props => {
   }; 
 
     return (
-  <div className={classes}>  
-    <div className={css.nuestrosClientesContent}>
-      <h1 className={css.nuestrosClientesTitle}>
-        -NUESTROS CLIENTES-
-      </h1>
-      <h2 className={css.gripLines}>
-      <i class="fas fa-grip-lines"></i>
-      </h2>
-      <h3 className ={css.nuestrosClientesSmallText}>
-     <p>Lorem ipsum dolor sit amet,<br></br>consectetur adipiscing elit, sed do eiusmod tempor</p>
-     </h3>
-    <h5 className={css.nuestrosClientesBigText}>
-    <p>Lorem ipsum dolor sit amet,<br></br>consectetur adipiscing elit, sed do eiusmod tempor</p>
-    </h5>
-  </div>
-  </div>
+    <div className="container d-flex align-middle flex-column align-items-center justify-content-center mb-5 mt-5">
+          <h1>
+          -NUESTROS CLIENTES-
+          </h1>
+          <h2>
+          <i className="fas fa-grip-lines deep-orange-text"></i>
+          </h2>
+
+          <p class="h5 text-center justify-content-center">Lorem ipsum dolor sit amet,<br></br>consectetur adipiscing elit, sed do eiusmod tempor</p>
+          <h1 class="display-3">
+          <i class="fas fa-quote-left"></i>
+          </h1>
+          <p class="h3 mt-8 ml-1 px-2 text-center"> Lorem ipsum dolor sit amet,<br></br>consectetur adipiscing elit, sed do eiusmod tempor</p>
+         
+        </div>
     );
   };
  

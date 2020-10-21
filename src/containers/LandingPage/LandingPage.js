@@ -89,24 +89,15 @@ export const LandingPageComponent = props => {
             <ReAssurance />
           </section>
 
-<<<<<<< HEAD
-          <ul className={css.sections}>
-            <li className={css.section}>
-              <div className={css.sectionContentFirstChild}>
-                <Contact />
-              </div>
-            </li>
-          </ul>
-
-          <section className="vh-100">
-          <NuestrosClientes/>  
-          </section>
-
-=======
           <section>
           <Contact />
           </section>
->>>>>>> master
+
+          <section>
+          <NuestrosClientes />
+          </section>
+
+
         </LayoutWrapperMain>
         <LayoutWrapperFooter>
           <Footer />
