@@ -1,7 +1,6 @@
 @import '../../marketplace.css';
-@import url('https://fonts.googleapis.com/css?family=Pacifico');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap');
-@import url('https://kit.fontawesome.com/ef59ef56d7.js');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet');
+
 
 :root {
   /*
@@ -63,6 +62,7 @@ width: auto;
 height: auto;
 align-content: center;
 float: right;
+font-family: 'Montserrat', sans-serif;
 
   @media (--viewportMedium) {
     margin: 0 7.5vw 0 7.5vw;
@@ -84,7 +84,7 @@ float: right;
 
 
 .nuestrosClientesTitle{
-  margin-top: 1.5em;
+  margin-top: 1em;
   font-family: 'Montserrat', sans-serif;
         font-weight: 700;
         font-size: 45px;
@@ -100,10 +100,10 @@ float: right;
   }
 }
 .nuestrosClientesSmallText{
-  margin-top: 1.5em;
-  font-family: 'Open Sans', sans-serif;
-        font-weight: 270;
-        font-size: 15px;
+  
+  font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        font-size: 12px;
         color: var(--matterColorDark);
         text-align: center;
 
@@ -118,9 +118,9 @@ float: right;
 
 .nuestrosClientesBigText {
    margin-top: 1.5em;
-  font-family: 'Open Sans', sans-serif;
-        font-weight: 270;
-        font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-size: 36px;
         color: var(--matterColorDark);
         text-align: center;
         
@@ -133,108 +133,22 @@ float: right;
   }
 }
 
-.heroMainSlogan2 {
-  font-family: 'Open Sans', sans-serif;
-        font-weight: 270;
-        font-size: 30px;
-        color: var(--matterColorDark);
-        text-align: right;
+.gripLines {
+  margin-top: 1.5em;
+  align-items: center;
+  align-content: center;
+  padding-left: 50;
+  size: 40;
+  height: 40px;
+       width: 40px;
+       color: orangered;
+       
 
-  @apply --SectionHero_animation;
-  animation-delay: 2s;
+ @apply --SectionHero_animation;
+ animation-delay: 2s;
 
-  @media (--viewportMedium) {
-    max-width: var(--SectionHero_desktopTitleMaxWidth);
-  }
-}
-.heroSubTitle {
-  font-family: 'Open Sans', sans-serif;
-        font-weight: 600;
-        font-size: 30px;
-        color: var(--matterColorDark);
-        text-align: right;
-
-  @apply --SectionHero_animation;
-  animation-delay: 2s;
-
-  @media (--viewportMedium) {
-    max-width: var(--SectionHero_desktopTitleMaxWidth);
-  }
+ @media (--viewportMedium) {
+   max-width: var(--SectionHero_desktopTitleMaxWidth);
+ }
 }
 
-
-.heroButton {
-  @apply --marketplaceButtonStyles;
-  @apply --SectionHero_animation;
-
-  animation-delay: 0.8s;
-  
-
-  @media (--viewportMedium) {
-    display: block;
-    width: 260px;
-    
-  }
-}
-
-.heroButtonCustom {
-  font-family: 'Montserrat',400;
-        font-weight: 500;
-        font-size: 20px;
-        color: var(--successColorLight);
-        text-align: center;
-
-  /* Dimensions */
-  display: block;
-  min-height: 39px;
-  margin: 0;
-  margin-bottom: 15px;
-  width: 250px;
-  
-
-  /* Padding is only for <a> elements where button styles are applied,
-  buttons elements should have zero padding */
-  padding: 20px 0 20px 0;
-
-  @media (--viewportMedium) {
-    padding: 20px 0 20px 0;
-  }
-
-  /* Borders */
-  border: none;
-  border-radius: var(--borderRadius);
-  
-
-  /* Colors */
-  background-color: #eb0089 ;
-  /*Buscar cachorros sombra*/
-  box-shadow: -11px -11px -10px black;
-
-  
-
-  /* Text */
-  text-align: center;
-  text-decoration: none;
-
-  /* Effects */
-  transition: all var(--transitionStyleButton);
-  cursor: pointer;
-
-  &:hover,
-  &:focus {
-    outline: none;
-    background-color: var(--marketplaceColorDark);
-    text-decoration: none;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  }
-  &:disabled {
-    background-color: var(--matterColorNegative);
-    color: var(--matterColorLight);
-    cursor: not-allowed;
-    box-shadow: none;
-  }
-
-  @media (--viewportMedium) {
-    min-height: 65px;
-  }
-}

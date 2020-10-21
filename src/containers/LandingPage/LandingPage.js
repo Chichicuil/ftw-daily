@@ -28,6 +28,7 @@ import ReAssurance from '../../components/ReAssurance/ReAssurance.js';
 import facebookImage from '../../assets/saunatimeFacebook-1200x630.jpg';
 import twitterImage from '../../assets/saunatimeTwitter-600x314.jpg';
 import css from './LandingPage.css';
+import NuestrosClientes from '../../components/NuestrosClientes/NuestrosClientes';
 
 export const LandingPageComponent = props => {
   const { history, intl, location, scrollingDisabled } = props;
@@ -87,6 +88,11 @@ export const LandingPageComponent = props => {
               </div>
             </li>
           </ul>
+
+          <section className="vh-100">
+          <NuestrosClientes/>  
+          </section>
+
         </LayoutWrapperMain>
         <LayoutWrapperFooter>
           <Footer />

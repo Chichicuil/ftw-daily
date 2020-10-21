@@ -18,11 +18,14 @@ const NuestrosClientes = props => {
       <h1 className={css.nuestrosClientesTitle}>
         -NUESTROS CLIENTES-
       </h1>
-      <p className={css.nuestrosClientesSmallText}>Lorem ipsum dolor sit amet,</p>
-     <p className={css.nuestrosClientesSmallText}>consectetur adipiscing elit, sed do eiusmod tempor </p>
+      <h2 className={css.gripLines}>
+      <i class="fas fa-grip-lines"></i>
+      </h2>
+      <h3 className ={css.nuestrosClientesSmallText}>
+     <p>Lorem ipsum dolor sit amet,<br></br>consectetur adipiscing elit, sed do eiusmod tempor</p>
+     </h3>
     <h5 className={css.nuestrosClientesBigText}>
-         <p>Lorem ipsum dolor sit amet</p>
-        <p>consectetur adipiscing elit, sed do eiusmod tempor</p>
+    <p>Lorem ipsum dolor sit amet,<br></br>consectetur adipiscing elit, sed do eiusmod tempor</p>
     </h5>
   </div>
   </div>

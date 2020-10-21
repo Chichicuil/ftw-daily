@@ -19,7 +19,7 @@ const SectionHero = props => {
         <img className="img-fluid" alt="Responsive image"  src={Image1}></img>
       </div>
       <div className="col-md-5 d-flex align-content-center flex-wrap">
-        <h1>&quot;La forma mas facil y segura <br></br>de encontrar a tu mejor amigo&quot;</h1>
+        <h1>&quot;La forma más fácil y segura <br></br>de encontrar a tu mejor amigo&quot;</h1>
         <button className="btn peach-gradient">Buscar Cachorros</button>
       </div>
     </div>
