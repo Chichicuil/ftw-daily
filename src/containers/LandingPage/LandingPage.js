@@ -29,6 +29,8 @@ import facebookImage from '../../assets/saunatimeFacebook-1200x630.jpg';
 import twitterImage from '../../assets/saunatimeTwitter-600x314.jpg';
 import css from './LandingPage.css';
 
+import $ from 'jquery';
+
 export const LandingPageComponent = props => {
   const { history, intl, location, scrollingDisabled } = props;
 
@@ -39,8 +41,9 @@ export const LandingPageComponent = props => {
   const schemaTitle = intl.formatMessage({ id: 'LandingPage.schemaTitle' }, { siteTitle });
   const schemaDescription = intl.formatMessage({ id: 'LandingPage.schemaDescription' });
   const schemaImage = `${config.canonicalRootURL}${facebookImage}`;
-
+  
   return (
+    
     <Page
       className={css.root}
       scrollingDisabled={scrollingDisabled}
@@ -64,6 +67,12 @@ export const LandingPageComponent = props => {
         <TopbarContainer />
         </LayoutWrapperTopbar>
         <LayoutWrapperMain>
+          <div id="fullPage">
+            <div class="section">Some section</div>
+            <div class="section">Some section</div>
+            <div class="section">Some section</div>
+            <div class="section">Some section</div>
+          </div>
           <section className="vh-100">
             <SectionHero history={history} location={location} />
           </section>
@@ -77,16 +86,11 @@ export const LandingPageComponent = props => {
 
           <section className="vh-100">
             <ReAssurance />
-            </section>
+          </section>
 
-
-          <ul className={css.sections}>
-            <li className={css.section}>
-              <div className={css.sectionContentFirstChild}>
-                <Contact />
-              </div>
-            </li>
-          </ul>
+          <section>
+          <Contact />
+          </section>
         </LayoutWrapperMain>
         <LayoutWrapperFooter>
           <Footer />
@@ -94,7 +98,9 @@ export const LandingPageComponent = props => {
       </LayoutSingleColumn>
     </Page>
   );
+  
 };
+
 
 const { bool, object } = PropTypes;
 
