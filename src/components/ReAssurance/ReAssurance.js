@@ -1,8 +1,4 @@
 import React from 'react';
-import css from './ReAssurance.css';
-import { FormattedMessage } from '../../util/reactIntl';
-import classNames from 'classnames';
-import { NamedLink } from '..';
 import Image3 from '../../assets/Reassurance.jpeg';
 
 
@@ -15,12 +11,13 @@ const ReAssurance = props => {
       <div className="col-md-6">
           <img className="img-fluid"  alt="Responsive image" src={Image3}></img>
         </div>
-        <div className="col-6 text-center">
-        
-          <h1>Re-Assurance</h1>
-          <button type="button"class="btn btn-yellow">SIMPLE </button>
-          <button type="button"class="btn btn-yellow">SEGURO</button>
-          <button type="button"class="btn btn-yellow">GARANTIZADO</button>
+        <div className="col-md-6 text-center">
+          <h1 className="text-center">RE-ASSURANCE</h1>
+          <div className="container d-flex align-middle flex-column align-items-center p-5">
+            <button type="button" class="btn btn-yellow w-50 mb-4">SIMPLE</button>
+            <button type="button" class="btn btn-yellow w-50 mb-4">SEGURO</button>
+            <button type="button" class="btn btn-yellow w-50 mb-4">GARANTIZADO</button>
+          </div>     
         </div>
       </div>
     </div>

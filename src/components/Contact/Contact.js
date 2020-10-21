@@ -1,8 +1,6 @@
 import React from 'react';
 import css from './Contact.css';
-import { FormattedMessage } from '../../util/reactIntl';
 import classNames from 'classnames';
-import { NamedLink } from '..';
 
 
 const Contact = props => {
@@ -14,10 +12,10 @@ const Contact = props => {
   }; 
 
     return (
-      <div class="jumbotron jumbotron-fluid" className={css.jumbotron}>
+      <div class="container">
           <div class="container">
               <div class="row justify-content-center">
-                  <div class="col-3 text-center">
+                  <div class="col-md-3 text-center">
                     <h1>Contact Us</h1>
                     <hr class="my-1"></hr>
                     <p>(+1) 615-718-7142</p>
@@ -26,25 +24,28 @@ const Contact = props => {
                     <p>Or</p>
                     <p>Social Media Icons</p>
                   </div>
-                  <div class="col-6 text-center bg-primary">
-                    <h1 class="text-light">Get In Touch</h1>
+                  <div class="col-md-6 card bg-primary text-center">
+                    <h1 class="white-text text-center">Contáctanos</h1>
                     <hr class="my-1 mb-4"></hr>
-                    <form>
+                    <form className="md-form card-body px-lg-5 pt-0">
                       <div class="form-row my-2">
-                        <div class="col">
-                          <input type="text" class="form-control" placeholder="Your name"></input>
+                        <div class="col-md-6 p-2">
+                          <input type="text" class="form-control white-text" id="materialContactFormName" required></input>
+                          <label className="white-text" for="materialContactFormName">Nombre</label>
                         </div>
-                        <div class="col">
-                          <input type="text" class="form-control" placeholder="Email"></input>
+                        <div class="col-md-6 p-2">
+                          <input type="text" class="form-control white-text" id="materialContactFormEmail" required></input>
+                          <label className="white-text" for="materialContactFormEmail">Email</label>
                         </div>
                       </div>
-                      <div class="form-row my-2">
-                      <textarea type="text" name="message" class="form-control" placeholder="Write your message.." required></textarea>
+                      <div className="col-md-12 pt-3">
+                      <textarea type="text" id="materialContactFormMessage" class="form-control md-textarea white-text" rows="3" required></textarea>
+                      <label className="white-text" for="materialContactFormMessage">Mensaje</label>
                       </div>
-                      <button type="submit" class="btn btn-md btn-light align-self-center shadow my-1">Send</button>
+                      <button type="submit" class="btn btn-warning btn-rounded btn-block z-depth-0 my-4 waves-effect">Send</button>
                     </form>
                   </div>
-                <div class="col-3 text-center">
+                <div class="col-md-3 text-center">
                     <h1>Address</h1>
                     <hr class="my-1"></hr>
                     <p>8001 Burgoyne Rd. Apt #3b<br></br>Houston, TX. 77063</p>
