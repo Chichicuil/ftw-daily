@@ -11,18 +11,13 @@ const PetIdeal = props => {
           return (
             <div className="container-fluid">
             <div className="row">
-            <div className="col-md-6">
                 <img className="img-fluid" alt="Responsive image" src={Image4}></img>
               </div>
-              <div className="col-6 text-center">
-
+              <div className="row d-flex align-middle flex-column align-items-center">
                 <h1>ENCUENTRA TU PET IDEAL</h1>
                 <button type="button"class="btn btn-danger">HACER EL TEST </button>
-       
               </div>
             </div>
-          </div>
-      
           );
         };
 

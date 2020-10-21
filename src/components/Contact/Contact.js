@@ -12,7 +12,7 @@ const Contact = props => {
   }; 
 
     return (
-      <div class="container">
+      <div class="jumbotron">
           <div class="container">
               <div class="row justify-content-center">
                   <div class="col-md-3 text-center">

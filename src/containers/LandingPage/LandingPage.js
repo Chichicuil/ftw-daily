@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
@@ -28,9 +29,6 @@ import ReAssurance from '../../components/ReAssurance/ReAssurance.js';
 import facebookImage from '../../assets/saunatimeFacebook-1200x630.jpg';
 import twitterImage from '../../assets/saunatimeTwitter-600x314.jpg';
 import css from './LandingPage.css';
-
-import $ from 'jquery';
-
 export const LandingPageComponent = props => {
   const { history, intl, location, scrollingDisabled } = props;
 
@@ -41,6 +39,8 @@ export const LandingPageComponent = props => {
   const schemaTitle = intl.formatMessage({ id: 'LandingPage.schemaTitle' }, { siteTitle });
   const schemaDescription = intl.formatMessage({ id: 'LandingPage.schemaDescription' });
   const schemaImage = `${config.canonicalRootURL}${facebookImage}`;
+
+
   
   return (
     
@@ -67,28 +67,22 @@ export const LandingPageComponent = props => {
         <TopbarContainer />
         </LayoutWrapperTopbar>
         <LayoutWrapperMain>
-          <div id="fullPage">
-            <div class="section">Some section</div>
-            <div class="section">Some section</div>
-            <div class="section">Some section</div>
-            <div class="section">Some section</div>
-          </div>
-          <section className="vh-100">
+          <section className="">
             <SectionHero history={history} location={location} />
           </section>
-          <section className="vh-100">
-            <ComoFunciona />
-          </section>
-
-          <section className="vh-100">
+          <section className="mb-md-5">
             <PetIdeal />
           </section>
 
-          <section className="vh-100">
+          <section className="">
+            <ComoFunciona />
+          </section>
+
+          <section className="mb-md-5">
             <ReAssurance />
           </section>
 
-          <section>
+          <section className="">
           <Contact />
           </section>
         </LayoutWrapperMain>
@@ -100,7 +94,6 @@ export const LandingPageComponent = props => {
   );
   
 };
-
 
 const { bool, object } = PropTypes;
 
