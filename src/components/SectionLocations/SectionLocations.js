@@ -54,17 +54,17 @@ const SectionLocations = props => {
       <div className={css.locationsCustom}>
         <ul className={css.ulCustomCenter}>
           <li className={css.liCustomCenter}>
-            <img className={css.imgCustom} src={VerifyIcon}></img>
+            <img className={css.imgCustom} alt="Responsive" src={VerifyIcon}></img>
             <h2>Cachorros Asegurados</h2>
             <p>Llegan o te regresamos tu dinero.</p>
           </li>
           <li className={css.liCustomCenter}>
-            <img className={css.imgCustom} src={FastDelivery}></img>
+            <img className={css.imgCustom} alt="Responsive" src={FastDelivery}></img>
             <h2>Seguimiento de envío</h2>
             <p>Sigue el rastro de tu cachorro.</p>
           </li>
           <li className={css.liCustomCenter}>
-            <img className={css.imgCustom} src={Certificate}></img>
+            <img className={css.imgCustom} alt="Responsive" src={Certificate}></img>
             <h2>Criaderos reconocidos</h2>
             <p>Lo que pagas es lo que recibes.</p>
           </li>

@@ -9,8 +9,6 @@ import config from '../../config';
 import {
   Page,
   SectionHero,
-  SectionHowItWorks,
-  SectionLocations,
   LayoutSingleColumn,
   LayoutWrapperTopbar,
   LayoutWrapperMain,  
@@ -69,10 +67,10 @@ export const LandingPageComponent = props => {
         </LayoutWrapperTopbar>
         <LayoutWrapperMain>
           <div id="fullPage">
-            <div class="section">Some section</div>
-            <div class="section">Some section</div>
-            <div class="section">Some section</div>
-            <div class="section">Some section</div>
+            <div className="section">Some section</div>
+            <div className="section">Some section</div>
+            <div className="section">Some section</div>
+            <div className="section">Some section</div>
           </div>
           <section className="vh-100">
             <SectionHero history={history} location={location} />
