@@ -12,7 +12,7 @@ const PetIdeal = props => {
               </div>
               <div className="row d-flex align-middle flex-column align-items-center">
                 <h1>ENCUENTRA TU PET IDEAL</h1>
-                <button type="button"class="btn btn-lg btn-danger">HACER EL TEST </button>
+                <button type="button"class="btn btn-lg btn-danger mb-md-5">HACER EL TEST </button>
               </div>
             </div>
           );

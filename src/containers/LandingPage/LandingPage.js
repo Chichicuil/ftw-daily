@@ -42,8 +42,7 @@ export const LandingPageComponent = props => {
 
 
   
-  return (
-    
+  return (  
     <Page
       className={css.root}
       scrollingDisabled={scrollingDisabled}
@@ -67,39 +66,40 @@ export const LandingPageComponent = props => {
         <TopbarContainer />
         </LayoutWrapperTopbar>
         <LayoutWrapperMain>
-          
-          <section className="mb-md-5">
-            <SectionHero history={history} location={location} />
-          </section>
+          <MDBAnimation reveal type="fadeIn" duration="4s">
+            <section className="vh-100">
+              <SectionHero />
+            </section>
+          </MDBAnimation>
 
-          <MDBAnimation reveal type="fadeIn" duration="2s">
-          <section className="mb-md-5">
-            <PetIdeal />
-          </section>
+          <MDBAnimation reveal type="fadeIn" duration="4s">
+            <section className="mb-md-5">
+              <PetIdeal />
+            </section>
           </MDBAnimation>
 
           <MDBAnimation reveal type="fadeInLeft" duration="2s">
-          <section className="">
-            <ComoFunciona />
-          </section>
+            <section className="">
+              <ComoFunciona />
+            </section>
           </MDBAnimation>
 
           <MDBAnimation reveal type="fadeInRight" duration="2s">
-          <section className="mb-md-5">
-            <ReAssurance />
-          </section>
+            <section className="mb-md-5">
+              <ReAssurance />
+            </section>
           </MDBAnimation>
 
           <MDBAnimation reveal type="fadeIn" duration="2s">
-          <section className="mt-md-5 mb-md-5">
-          <Contact />
-          </section>
+            <section className="mt-md-5 mb-md-5">
+              <Contact />
+            </section>
           </MDBAnimation>
 
           <MDBAnimation reveal type="fadeInDown" duration="2s">
-          <section>
-          <NuestrosClientes />
-          </section>
+            <section>
+              <NuestrosClientes />
+            </section>
           </MDBAnimation>
 
 
