@@ -22,7 +22,9 @@ import ComoFunciona from '../../components/ComoFunciona/ComoFunciona.js';
 import PetIdeal from '../../components/PetIdeal/PetIdeal.js'
 import Contact from '../../components/Contact/Contact.js'
 import ReAssurance from '../../components/ReAssurance/ReAssurance.js';
-
+import NuestrosClientes from '../../components/NuestrosClientes/NuestrosClientes.js';
+// Animaciones
+import { MDBAnimation } from "mdbreact";
 //Media Images
 import facebookImage from '../../assets/saunatimeFacebook-1200x630.jpg';
 import twitterImage from '../../assets/saunatimeTwitter-600x314.jpg';
@@ -40,8 +42,7 @@ export const LandingPageComponent = props => {
 
 
   
-  return (
-    
+  return (  
     <Page
       className={css.root}
       scrollingDisabled={scrollingDisabled}
@@ -65,28 +66,41 @@ export const LandingPageComponent = props => {
         <TopbarContainer />
         </LayoutWrapperTopbar>
         <LayoutWrapperMain>
-          <section className="">
-            <SectionHero history={history} location={location} />
-          </section>
-          <section className="mb-md-5">
-            <PetIdeal />
-          </section>
+          <MDBAnimation reveal type="fadeIn" duration="4s">
+            <section className="vh-100">
+              <SectionHero />
+            </section>
+          </MDBAnimation>
 
-          <section className="">
-            <ComoFunciona />
-          </section>
+          <MDBAnimation reveal type="fadeIn" duration="4s">
+            <section className="mb-md-5">
+              <PetIdeal />
+            </section>
+          </MDBAnimation>
 
-          <section className="mb-md-5">
-            <ReAssurance />
-          </section>
+          <MDBAnimation reveal type="fadeInLeft" duration="2s">
+            <section className="">
+              <ComoFunciona />
+            </section>
+          </MDBAnimation>
 
-          <section className="">
-          <Contact />
-          </section>
+          <MDBAnimation reveal type="fadeInRight" duration="2s">
+            <section className="mb-md-5">
+              <ReAssurance />
+            </section>
+          </MDBAnimation>
 
-          <section>
-          <NuestrosClientes />
-          </section>
+          <MDBAnimation reveal type="fadeIn" duration="2s">
+            <section className="mt-md-5 mb-md-5">
+              <Contact />
+            </section>
+          </MDBAnimation>
+
+          <MDBAnimation reveal type="fadeInDown" duration="2s">
+            <section>
+              <NuestrosClientes />
+            </section>
+          </MDBAnimation>
 
 
         </LayoutWrapperMain>
