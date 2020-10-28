@@ -67,7 +67,7 @@ export const LandingPageComponent = props => {
         </LayoutWrapperTopbar>
         <LayoutWrapperMain>
           <MDBAnimation reveal type="fadeIn" duration="4s">
-            <section className="vh-100">
+            <section className="mb-md-5 mt-md-5">
               <SectionHero />
             </section>
           </MDBAnimation>
